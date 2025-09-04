@@ -23,6 +23,7 @@ RUN npm install esbuild@0.19.11 --save-exact
 
 WORKDIR /opt/app
 COPY . .
+RUN ls
 RUN npm run build
 
 # Creating final production image
